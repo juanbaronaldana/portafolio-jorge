@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: linear-gradient(135deg, #f0f4ff, #dff1ff);
+    color: #333;
+}
+
+.sidebar {
+    width: 25%;
+    background: linear-gradient(135deg, #0066cc, #0099cc);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+.sidebar h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ffcc66;
+}
+
+.sidebar p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.content {
+    width: 75%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section h2 {
+    font-size: 1.8em;
+    color: #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.section h2:hover {
+    color: #ffcc66;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.item h3 {
+    font-size: 1.3em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.item h3:hover {
+    color: #0099cc;
+}
+
+.item span {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: linear-gradient(135deg, #ffcc66, #ff9966);
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: linear-gradient(135deg, #ff9966, #ff6666);
+    transform: scale(1.1);
+}
+
+.sidebar:hover {
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.content:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
